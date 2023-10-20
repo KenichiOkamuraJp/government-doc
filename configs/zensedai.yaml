@@ -1,0 +1,26 @@
+name: 全世代型社会保障構築会議
+internet:
+  url: https://www.cas.go.jp/jp/seisaku/zensedai_hosyo/index.html
+  base: https://www.cas.go.jp/jp/seisaku/zensedai_hosyo/
+table:
+  tag: tbl_giji
+  type: 0
+  kaisu: 0
+  date : 1
+  giji : 2
+  minutes : 3
+  other : 0
+filter:
+  page: "[\n][0123456789]+"
+  speaker: "○.*[議員|氏|議長|委員|大臣|構成員|座長|審議官|連合会|市長会|知事会|町村会|局長]  "
+  pre-erasing-space: False
+folder:
+  work: zensedai
+  pdf: zensedai/pdf
+  target: zensedai/text
+  index: zensedai/index2
+  html: zensedai/html2
+files:
+  meetings: zensedai/meeting_list.xlsx
+  output: zensedai/summaries2.xlsx
+  output-jp: zensedai/summaries2_jp.xlsx

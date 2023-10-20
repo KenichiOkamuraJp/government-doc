@@ -1,0 +1,26 @@
+name: 新しい資本主義実現会議
+internet:
+  url: https://www.cas.go.jp/jp/seisaku/atarashii_sihonsyugi/index.html
+  base: https://www.cas.go.jp/jp/seisaku/atarashii_sihonsyugi/
+table:
+  tag: tbl_giji tbl_kaigi
+  type: 0
+  kaisu: 0
+  date : 1
+  giji : 2
+  minutes : 3
+  other : 4
+filter:
+  page: "[\n-][0123456789]+"
+  speaker: "○.*[議員|氏|議長|委員|大臣]\n"
+  pre-erasing-space: True
+folder:
+  work: atarashii
+  pdf: atarashii/pdf
+  target: atarashii/text
+  index: atarashii/index2
+  html: atarashii/html2
+files:
+  meetings: atarashii/meeting_list.xlsx
+  output: atarashii/summaries2.xlsx
+  output-jp: atarashii/summaries2_jp.xlsx

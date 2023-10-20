@@ -1,0 +1,26 @@
+name: 子ども戦略未来会議
+internet:
+  url: https://www.cas.go.jp/jp/seisaku/kodomo_mirai/index.html
+  base: https://www.cas.go.jp/jp/seisaku/kodomo_mirai/
+table:
+  tag: tbl_giji
+  type: 1
+  kaisu: -1
+  date : 0
+  giji : 1
+  minutes : 3
+  other : 2
+filter:
+  page: "[\n][0123456789]+"
+  speaker: "○.*[議員|氏|議長|委員|大臣|構成員]  "
+  pre-erasing-space: False
+folder:
+  work: kodomo
+  pdf: kodomo/pdf
+  target: kodomo/text
+  index: kodomo/index2
+  html: kodomo/html2
+files:
+  meetings: kodomo/meeting_list.xlsx
+  output: kodomo/summaries2.xlsx
+  output-jp: kodomo/summaries_jp2.xlsx

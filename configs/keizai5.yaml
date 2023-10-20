@@ -1,0 +1,26 @@
+name: 令和5年経済財政諮問会議
+internet:
+  url: https://www5.cao.go.jp/keizai-shimon/kaigi/minutes/2023/index.html
+  base: https://www5.cao.go.jp/keizai-shimon/kaigi/minutes/2023/
+table:
+  tag: tableBase
+  type: 2
+  kaisu: -1
+  date : -1
+  giji : 0
+  minutes : 2
+  other : 1
+filter:
+  page: "[\n][0123456789]+"
+  speaker: "（.*[議員|氏|議長|委員|大臣|統括官]）"
+  pre-erasing-space: True
+folder:
+  work: keizai5
+  pdf: keizai5/pdf
+  target: keizai5/text
+  index: keizai5/index
+  html: keizai5/html
+files:
+  meetings: keizai5/meeting_list.xlsx
+  output: keizai5/summaries2.xlsx
+  output-jp: keizai5/summaries_jp2.xlsx
